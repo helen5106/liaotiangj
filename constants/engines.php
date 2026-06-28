@@ -1,0 +1,74 @@
+<?php
+
+define( 'MWAI_ENGINES', [
+  [
+    'name' => 'OpenAI',
+    'type' => 'openai',
+    'inputs' => ['apikey', 'organizationId'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Anthropic',
+    'type' => 'anthropic',
+    'inputs' => ['apikey'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Azure (OpenAI)',
+    'type' => 'azure',
+    'inputs' => ['apikey', 'endpoint', 'region'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Google',
+    'type' => 'google',
+    'inputs' => ['apikey', 'dynamicModels'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'OpenRouter',
+    'type' => 'openrouter',
+    'inputs' => ['apikey', 'dynamicModels'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Replicate',
+    'type' => 'replicate',
+    'inputs' => ['apikey', 'dynamicModels'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Perplexity',
+    'type' => 'perplexity',
+    'inputs' => ['apikey'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Mistral',
+    'type' => 'mistral',
+    'inputs' => ['apikey', 'dynamicModels'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'xAI (Grok)',
+    'type' => 'xai',
+    'inputs' => ['apikey', 'dynamicModels'],
+    'internal' => true,
+    'models' => []
+  ],
+  [
+    'name' => 'Custom (OpenAI-Compatible)',
+    'type' => 'custom',
+    'inputs' => ['endpoint', 'apikey', 'dynamicModels'],
+    'internal' => true,
+    'models' => []
+  ],
+] );
